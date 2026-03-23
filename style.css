@@ -1,104 +1,11 @@
-/* HEADER */
-.top-header {
-    position: relative;
-    padding: 20px;
-    text-align: center;
-}
-
-.logo-center img {
-    height: 90px;
-}
-
-/* ICONS */
-.top-icons {
-    position: absolute;
-    right: 30px;
-    top: 25px;
-    display: flex;
-    gap: 15px;
-    font-size: 18px;
-}
-
-/* NAV */
-.main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 15px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* DROPDOWN */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 200px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 10px;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-/* FLOATING BUTTONS */
-.floating-buttons {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.floating-buttons button,
-.floating-buttons a {
-    background: #b08a66;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-/* FOOTER */
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 40px;
-    background: #2f2a28;
-    color: white;
-}
-
 /* =========================
-   PALULU DECOR - NUDE PINK LUXURY THEME
+   PALULU DECOR - FINAL NUDE LUXURY THEME
 ========================= */
 
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #F6EFEA; /* soft nude */
+    background: #F6EFEA;
     color: #3B2F2A;
 }
 
@@ -114,11 +21,11 @@ body {
 }
 
 .logo-center img {
-    height: 100px;
-    filter: drop-shadow(0px 8px 18px rgba(0,0,0,0.12));
+    height: 105px;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.12));
 }
 
-/* top icons */
+/* ICONS */
 .top-icons {
     position: absolute;
     right: 25px;
@@ -126,7 +33,7 @@ body {
     display: flex;
     gap: 18px;
     font-size: 18px;
-    color: #CFA6A0; /* blush pink */
+    color: #CFA6A0;
 }
 
 /* =========================
@@ -151,10 +58,10 @@ body {
 }
 
 .main-nav a:hover {
-    color: #CFA6A0; /* pink hover */
+    color: #CFA6A0;
 }
 
-/* dropdown */
+/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -164,8 +71,9 @@ body {
     position: absolute;
     background: #fff;
     min-width: 210px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    border-radius: 12px;
+    z-index: 1000;
 }
 
 .dropdown:hover .dropdown-content {
@@ -175,7 +83,6 @@ body {
 .dropdown-content a {
     display: block;
     padding: 10px;
-    color: #3B2F2A;
 }
 
 .dropdown-content a:hover {
@@ -193,8 +100,8 @@ body {
 }
 
 .hero h1 {
-    font-size: 52px;
-    color: #3B2F2A;
+    font-size: 54px;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -206,9 +113,9 @@ body {
 .btn {
     display: inline-block;
     margin-top: 20px;
-    background: linear-gradient(135deg, #C8A96A, #CFA6A0);
+    background: linear-gradient(135deg, #CFA6A0, #C8A96A);
     color: white;
-    padding: 13px 32px;
+    padding: 14px 34px;
     border-radius: 30px;
     text-decoration: none;
     transition: 0.3s;
@@ -220,7 +127,7 @@ body {
 }
 
 /* =========================
-   CARDS
+   PRODUCTS
 ========================= */
 
 .grid {
@@ -232,9 +139,9 @@ body {
 
 .card {
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
@@ -248,12 +155,8 @@ body {
     object-fit: cover;
 }
 
-.card div {
-    padding: 15px;
-}
-
 .card h3 {
-    margin: 0;
+    margin: 10px 0;
     color: #3B2F2A;
 }
 
