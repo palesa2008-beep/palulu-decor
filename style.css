@@ -1,0 +1,92 @@
+/* HEADER */
+.top-header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-center img {
+    height: 90px;
+}
+
+/* ICONS */
+.top-icons {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+/* NAV */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* FLOATING BUTTONS */
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons button,
+.floating-buttons a {
+    background: #b08a66;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px;
+    background: #2f2a28;
+    color: white;
+}
